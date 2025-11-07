@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CINERATE</title>
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="./assets/images/logo.png" alt="CINERATE Logo">
+    </a>
+  </div>
+
+  <div class="search-container">
+    <input type="text" placeholder="Search" class="search-bar" />
+    <i class="fa fa-search search-icon"></i>
+  </div>
+
+  <!-- Burger Icon -->
+  <div class="burger" id="burger">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="nav-buttons" id="nav-buttons">
+    <a href="./pages/login.html"><button class="btn sign-in">SIGN IN</button></a>
+    <a href="./pages/register.html"><button class="btn register">REGISTER</button></a>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="movie-info">
+        <h1 id="movie-title">Avatar</h1>
+        <p><strong>Title:</strong> <span id="movie-full-title">Avatar Fire and Ash</span></p>
+        <p><strong>Genre:</strong> <span id="movie-genre">Epic Science Fiction / Action-Adventure / Fantasy</span></p>
+        <p><strong>Wikipedia:</strong> 
+          <a id="wiki-link" href="https://en.wikipedia.org/wiki/Avatar_(2009_film)" target="_blank">Wikipedia.com/Avatar</a>
+        </p>
+        <p><strong>Release Date:</strong> <span id="movie-date">December 19, 2025</span></p>
+        <div class="icons">
+          <i class="fa fa-thumb-tack" title="Add to Watchlist">📌</i>
+          <i class="fa fa-circle" title="Similar Movies">⨂</i>
+        </div>
+        <div class="rating">
+          <span>★ ★ ★ ★ ★</span>
+          <p>Rate</p>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="./assets/images/avatar thumbnail.png"
+               class="carousel-item active"
+               data-title="Avatar"
+               data-fulltitle="Avatar Fire and Ash"
+               data-genre="Epic Science Fiction / Action-Adventure / Fantasy"
+               data-wiki="https://en.wikipedia.org/wiki/Avatar_(2009_film)"
+               data-date="December 19, 2025"
+               data-bg="./assets/images/avatarbg.png">
+
+          <img src="./assets/images/interstellar thumbnail.png"
+               class="carousel-item"
+               data-title="Interstellar"
+               data-fulltitle="Interstellar: Beyond the Stars"
+               data-genre="Sci-Fi / Drama / Adventure"
+               data-wiki="https://en.wikipedia.org/wiki/Interstellar_(film)"
+               data-date="November 7, 2014"
+               data-bg="./assets/images/interstellarbg.png">
+
+          <img src="./assets/images/mzthumbnail.png"
+               class="carousel-item"
+               data-title="Maze Runner"
+               data-fulltitle="Maze Runner: The Death Cure"
+               data-genre="Action / Sci-Fi / Thriller"
+               data-wiki="https://en.wikipedia.org/wiki/Maze_Runner:_The_Death_Cure"
+               data-date="January 26, 2018"
+               data-bg="./assets/images/mzbg.png">
+        </div>
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="carousel script.js"></script>
+</body>
+</html>
+

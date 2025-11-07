@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineRate - Sign In</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    <h2>Sign in to <span>CineRate</span></h2>
+    <p>Rate a movie, unlock your next favorite.</p>
+  </div>
+
+  <!-- Main Container -->
+  <div class="signin-container">
+    <!-- Left Poster Side -->
+    <div class="left-side">
+      <img src="../assets/images/loginbg.png" alt="Movie Collage">
+      <div class="logo-text"></div>
+    </div>
+
+    <!-- Right Form Side -->
+    <div class="right-side">
+        <div class="back-button">
+      <a href="../index.html" class="back-btn"> ⬅ BACK</a>
+      </div>
+      
+      <h2>Welcome Back!</h2>
+      <h3>Sign In</h3>
+
+      <form class="signin-form">
+        <label>Username*</label>
+        <input type="text" placeholder="Username" required>
+
+        <label>Password*</label>
+        <input type="password" placeholder="Password" required>
+
+        <div class="options">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="button" class="signin-btn" onclick="location.href='userlogin.html'">SIGN IN</button>
+
+        <p class="signup-text">
+          Don't have an account? <a href="../pages/register.html">Create One</a>
+        </p>
+
+        <div class="divider">
+          <span>Sign in with</span>
+        </div>
+
+        <div class="social-buttons">
+          <button class="google">G</button>
+          <button class="facebook">f</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

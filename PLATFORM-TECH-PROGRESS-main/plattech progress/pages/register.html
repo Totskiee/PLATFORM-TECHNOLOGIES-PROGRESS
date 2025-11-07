@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CineRate - Register</title>
+  <link rel="stylesheet" href="../assets/styles/register.css">
+</head>
+<body>
+
+  <div class="top-banner">
+    <h2>Join <span>CineRate</span></h2>
+    <p>Rate a movie, unlock your next favorite.</p>
+  </div>
+
+  <div class="signin-container">
+    <div class="left-side">
+      <img src="../assets/images/loginbg.png" alt="Movie Collage">
+      <div class="logo-text">CINERATE</div>
+    </div>
+
+    <div class="right-side">
+      <div class="form-header">
+        <a href="login.html" class="back-btn">⬅ BACK</a>
+        <h2>Register</h2>
+      </div>
+
+      <form class="signin-form" novalidate>
+        <label for="email">Email *</label>
+        <input id="email" type="email" placeholder="Email" required>
+
+        <label for="username">Username *</label>
+        <input id="username" type="text" placeholder="Username" required>
+
+        <label for="password">Password *</label>
+        <input id="password" type="password" placeholder="Password" required>
+
+        <label>Birthdate *</label>
+        <div class="birthdate">
+          <select id="month" name="month" aria-label="Month" required>
+            <option value="" disabled selected>Month</option>
+          </select>
+
+          <select id="day" name="day" aria-label="Day" required>
+            <option value="" disabled selected>Day</option>
+          </select>
+
+          <select id="year" name="year" aria-label="Year" required>
+            <option value="" disabled selected>Year</option>
+          </select>
+        </div>
+        
+        <script src="../birthdate script.js" defer></script>
+
+        <label class="terms">
+          <input type="checkbox" required>
+          By continuing, you agree to CineRate Terms of Use and Privacy Policy.
+        </label>
+
+        <button type="button" class="signin-btn" onclick="location.href='login.html'">SIGN IN</button>
+
+        <p class="signup-text">Already have an account? <a href="login.html">Sign in</a></p>
+
+        <div class="divider">Sign up with</div>
+
+        <div class="social-buttons">
+          <button class="google" aria-label="Sign up with Google">G</button>
+          <button class="facebook" aria-label="Sign up with Facebook">f</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
